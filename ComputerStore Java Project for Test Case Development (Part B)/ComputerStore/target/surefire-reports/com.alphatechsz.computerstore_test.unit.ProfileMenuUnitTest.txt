@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.alphatechsz.computerstore_test.unit.ProfileMenuUnitTest
+-------------------------------------------------------------------------------
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.347 s -- in com.alphatechsz.computerstore_test.unit.ProfileMenuUnitTest

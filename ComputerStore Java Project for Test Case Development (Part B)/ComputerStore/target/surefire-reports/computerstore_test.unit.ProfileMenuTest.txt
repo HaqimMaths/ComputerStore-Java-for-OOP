@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Test set: computerstore_test.unit.ProfileMenuTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.381 s <<< FAILURE! -- in computerstore_test.unit.ProfileMenuTest
+computerstore_test.unit.ProfileMenuTest.unit_saveButtonWithInvalidIdThrowsNumberFormat -- Time elapsed: 0.060 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.lang.NumberFormatException> but was: <java.lang.RuntimeException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at computerstore_test.unit.ProfileMenuTest.unit_saveButtonWithInvalidIdThrowsNumberFormat(ProfileMenuTest.java:81)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at computerstore_test.support.BaseSwingTest.runOnEdt(BaseSwingTest.java:59)
+	at computerstore_test.unit.ProfileMenuTest.lambda$unit_saveButtonWithInvalidIdThrowsNumberFormat$0(ProfileMenuTest.java:82)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.desktop/java.awt.EventQueue.invokeAndWait(EventQueue.java:1312)
+	at java.desktop/java.awt.EventQueue.invokeAndWait(EventQueue.java:1287)
+	at java.desktop/javax.swing.SwingUtilities.invokeAndWait(SwingUtilities.java:1474)
+	at computerstore_test.support.BaseSwingTest.runOnEdt(BaseSwingTest.java:57)
+	... 8 more
+Caused by: java.lang.NumberFormatException: For input string: "notANumber"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:564)
+	at java.base/java.lang.Integer.parseInt(Integer.java:661)
+	at com.alphatechsz.computerstore.ProfileMenu.saveButtonActionPerformed(ProfileMenu.java:188)
+	at com.alphatechsz.computerstore.ProfileMenu$2.actionPerformed(ProfileMenu.java:69)
+	at computerstore_test.unit.ProfileMenuTest.lambda$unit_saveButtonWithInvalidIdThrowsNumberFormat$1(ProfileMenuTest.java:88)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:308)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:723)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:702)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
