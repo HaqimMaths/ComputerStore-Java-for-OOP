@@ -1,0 +1,26 @@
+Category,UseDefault,Id,Brand,Model,Type,Size,Color,Year,CPU,GPU,Motherboard,StorageGB,RAMGB,Price,Notes,Result
+Functional,,1,Dell,XPS,Ultrabook,30x20x2,Silver,2022,Intel i7,RTX 3050,XPS Board,512,16,5999.99,,Passed
+Functional,,2,HP,Omen,Gaming,35x25x3,Black,2023,Intel i9,RTX 4080,Omen Max,2048,32,12999,,Passed
+Functional,,3,Apple,MacBookPro,Professional,30x21x2,Space Gray,2021,M1,Integrated,Apple Mobo,1024,16,8999.5,,Passed
+Functional,,4,Lenovo,ThinkPad,Business,31x22x2,Black,2020,Intel i5,Integrated,ThinkPad Board,256,8,3499,,Passed
+Functional,,5,Asus,ROG,Gaming,36x26x3,Black,2024,AMD Ryzen 9,Radeon RX 7900,ROG Board,2048,64,13999.99,,Passed
+Functional,,6,Acer,Swift,Ultrabook,30x20x2,Blue,2022,Intel i7,Arc A370M,Swift Board,512,16,5299,,Passed
+Functional,,7,MSI,Creator,Professional,33x23x2,White,2023,Intel i7,RTX 4060,Creator Mobo,1024,32,8999,,Passed
+Functional,,8,Gigabyte,Aero,Creator,33x22x2,Silver,2022,Intel i9,RTX 4070,Aero Board,1024,32,9999,,Passed
+Functional,,9,Razer,Blade,Gaming,35x24x2,Black,2023,Intel i9,RTX 4090,Blade Mobo,2048,64,15999.99,,Passed
+Functional,,10,Samsung,GalaxyBook,Portable,29x19x2,Silver,2021,Intel i5,Integrated,Galaxy Board,512,8,3999,,Passed
+Functional,,11,Huawei,MateBook,Portable,29x19x2,Gray,2022,Intel i7,Integrated,Mate Mobo,512,16,4599,,Passed
+Functional,,12,Microsoft,Surface,2-in-1,29x20x2,Platinum,2023,Intel i7,Integrated,Surface Board,1024,32,8999,,Passed
+Functional,,13,Alienware,M17,Gaming,40x28x3,Black,2024,AMD Ryzen 7,RTX 4080,Alien Board,2048,32,13999,,Passed
+Functional,,14,Framework,13,Modular,30x20x2,Silver,2024,Intel i7,Integrated,FW Board,1024,32,7999,,Passed
+Functional,,15,Tuxedo,Infinity,Linux,31x21x2,Black,2023,Intel i7,RTX 4050,TXD Board,1024,32,7599,,Passed
+Boundary,TRUE,0,,,,,,,,,,,0,0,Default constructor sentinel values,Passed
+Boundary,FALSE,-1,,,,,,,,,,,-1,-1,Negatives and empties (-0.01),Passed
+Boundary,FALSE,2147483647,B,M,T,S,C,,,CPU,GPU,MB,2147483647,2147483647,Max ints/double (1.7976931348623157E308),Passed
+Boundary,FALSE,-2147483648,b,m,t,s,c,,,cpu,gpu,mb,-2147483648,-2147483648,Min ints/negative double (-1.7976931348623157E308),Passed
+Boundary,FALSE,0, , , , , ,,,, ,,0,0,Whitespace strings (0),Passed
+Boundary,FALSE,123,LongBrandNameLongBrandName,LongModelNameLongModelName,TT,SS,CC,,CPU-EXTREME,RTX-000,MB-EXTREME,1,1,0.1,Long strings,Passed
+Boundary,FALSE,42,Ø,模型,タイプ,サイズ,顏色,2024,处理器,显卡,主板,999,128,1,Unicode brand/model,Passed
+Boundary,FALSE,7,Brand,Model,Type,Size,Color,0,CPU,Arc A380,Mobo,0,0,123.45,Zero storage and RAM,Passed
+Boundary,FALSE,8,Brand,Model,Type,Size,Color,2024,CPU,radeon rx 7600,Mobo,512,16,4999.99,Lowercase GPU,Passed
+Boundary,FALSE,9,Brand,Model,Type,Size,Color,2024,CPU,RTX,Mobo,512,16,4999.99,Minimal GPU marker,Passed

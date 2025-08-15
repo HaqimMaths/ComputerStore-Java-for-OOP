@@ -1,0 +1,26 @@
+Category,Id,Brand,Model,Type,Size,Color,Year,CPU,GPU,Motherboard,StorageGB,RAMGB,Price,DiscountPercent,ExpectedGaming,ExpectedException,Notes,Result
+Functional,100,Dell,XPS,Ultrabook,30x20x2,Silver,2022,i7,RTX 3050,XPS Board,512,16,6000,10,TRUE,, ,Passed
+Functional,101,HP,Omen,Gaming,35x25x3,Black,2023,i9,RTX 4080,Omen Max,2048,32,13000,15,TRUE,, ,Passed
+Functional,102,Apple,MBP,Pro,30x21x2,Gray,2021,M1,Integrated,Apple,1024,16,9000,5,FALSE,, ,Passed
+Functional,103,Lenovo,ThinkPad,Business,31x22x2,Black,2020,i5,Integrated,Lenovo,256,8,3500,20,FALSE,, ,Passed
+Functional,104,Asus,ROG,Gaming,36x26x3,Black,2024,Ryzen 9,Radeon RX 7900,ROG,2048,64,14000,25,TRUE,, ,Passed
+Functional,105,Acer,Swift,Ultrabook,30x20x2,Blue,2022,i7,Arc A370M,Swift,512,16,5300,10,TRUE,, ,Passed
+Functional,106,MSI,Creator,Pro,33x23x2,White,2023,i7,RTX 4060,MSI,1024,32,9000,10,TRUE,, ,Passed
+Functional,107,Gigabyte,Aero,Creator,33x22x2,Silver,2022,i9,RTX 4070,Gigabyte,1024,32,10000,12.5,TRUE,, ,Passed
+Functional,108,Razer,Blade,Gaming,35x24x2,Black,2023,i9,RTX 4090,Razer,2048,64,16000,17.5,TRUE,, ,Passed
+Functional,109,Samsung,GalaxyBook,Portable,29x19x2,Silver,2021,i5,Integrated,Samsung,512,8,4000,10,FALSE,, ,Passed
+Functional,110,Huawei,MateBook,Portable,29x19x2,Gray,2022,i7,Integrated,Huawei,512,16,4600,7,FALSE,, ,Passed
+Functional,111,Microsoft,Surface,2-in-1,29x20x2,Platinum,2023,i7,Integrated,Microsoft,1024,32,9000,8,FALSE,, ,Passed
+Functional,112,Alienware,M17,Gaming,40x28x3,Black,2024,Ryzen 7,RTX 4080,Alien,2048,32,14000,30,TRUE,, ,Passed
+Functional,113,Framework,13,Modular,30x20x2,Silver,2024,i7,Integrated,FW,1024,32,8000,9,FALSE,, ,Passed
+Functional,114,Tuxedo,Infinity,Linux,31x21x2,Black,2023,i7,RTX 4050,TXD,1024,32,7600,11,TRUE,, ,Passed
+Exception,1,Brand,Model,Type,Size,Color,2024,CPU,,Mobo,256,8,1000,,,NullPointerException,GPU is null,Passed
+Exception,1,Brand,Model,Type,Size,Color,2024,CPU,,Mobo,256,8,1000,,,NullPointerException,GPU is null,Passed
+Exception,1,Brand,Model,Type,Size,Color,2024,CPU,,Mobo,256,8,1000,,,NullPointerException,GPU is null,Passed
+Exception,1,Brand,Model,Type,Size,Color,2024,CPU,,Mobo,256,8,1000,,,NullPointerException,GPU is null,Passed
+Exception,1,Brand,Model,Type,Size,Color,2024,CPU,,Mobo,256,8,1000,,,NullPointerException,GPU is null,Passed
+Exception,1,Brand,Model,Type,Size,Color,2024,CPU,,Mobo,256,8,1000,,,NullPointerException,GPU is null,Passed
+Exception,1,Brand,Model,Type,Size,Color,2024,CPU,,Mobo,256,8,1000,,,NullPointerException,GPU is null,Passed
+Exception,1,Brand,Model,Type,Size,Color,2024,CPU,,Mobo,256,8,1000,,,NullPointerException,GPU is null,Passed
+Exception,1,Brand,Model,Type,Size,Color,2024,CPU,,Mobo,256,8,1000,,,NullPointerException,GPU is null,Passed
+Exception,1,Brand,Model,Type,Size,Color,2024,CPU,,Mobo,256,8,1000,,,NullPointerException,GPU is null,Passed

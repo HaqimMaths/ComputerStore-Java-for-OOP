@@ -1,0 +1,26 @@
+Category,NewID,Name,Email,Password,BadId,ExpectedException,Notes,Result
+Functional,1,Alice,alice@example.com,p@ss1,,,After Save reflects in new frame,Passed
+Functional,2,Bob,bob@example.com,p@ss2,,,After Save reflects in new frame,Passed
+Functional,3,Carol,carol@example.com,p@ss3,,,After Save reflects in new frame,Passed
+Functional,4,Dave,dave@example.com,p@ss4,,,After Save reflects in new frame,Passed
+Functional,5,Eve,eve@example.com,p@ss5,,,After Save reflects in new frame,Passed
+Functional,6,Frank,frank@example.com,p@ss6,,,After Save reflects in new frame,Passed
+Functional,7,Grace,grace@example.com,p@ss7,,,After Save reflects in new frame,Passed
+Functional,8,Heidi,heidi@example.com,p@ss8,,,After Save reflects in new frame,Passed
+Functional,9,Ivan,ivan@example.com,p@ss9,,,After Save reflects in new frame,Passed
+Functional,10,Judy,judy@example.com,p@ss10,,,After Save reflects in new frame,Passed
+Functional,11,Mallory,mallory@example.com,p@ss11,,,After Save reflects in new frame,Passed
+Functional,12,Niaj,niaj@example.com,p@ss12,,,After Save reflects in new frame,Passed
+Functional,13,Olivia,olivia@example.com,p@ss13,,,After Save reflects in new frame,Passed
+Functional,14,Peggy,peggy@example.com,p@ss14,,,After Save reflects in new frame,Passed
+Functional,15,Sybil,sybil@example.com,p@ss15,,,After Save reflects in new frame,Passed
+Exception,,,,,abc,,NumberFormatException or HeadlessException,Passed
+Exception,,,,,,,NumberFormatException or HeadlessException,Passed
+Exception,,,,,, ,NumberFormatException or HeadlessException,Passed
+Exception,,,,,,12.34,NumberFormatException or HeadlessException,Passed
+Exception,,,,,,-1,NumberFormatException or HeadlessException,Passed
+Exception,,,,,,1.00E+03,NumberFormatException or HeadlessException,Passed
+Exception,,,,,,+,NumberFormatException or HeadlessException,Passed
+Exception,,,,,,-,NumberFormatException or HeadlessException,Passed
+Exception,,,,,,0x10,NumberFormatException or HeadlessException,Passed
+Exception,,,,,,NaN,NumberFormatException or HeadlessException,Passed
